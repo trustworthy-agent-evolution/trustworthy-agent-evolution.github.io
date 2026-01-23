@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>The 1st Workshop on Trustworthy Evolution of AI Agents</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <style>
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+    .schedule-table th,
+    .schedule-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    .schedule-table th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+    .schedule-table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .schedule-table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      .schedule-table th,
+      .schedule-table td {
+        padding: 10px;
+      }
+    }
+    
+    /* Unified organizer image styles */
+    #organizers .speaker img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    
+    /* Unified speaker image styles */
+    #speakers .speaker img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    
+    /* Unified panelist image styles */
+    #panelists .speaker img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    
+    /* Unified advisory board image styles */
+    #advisory-board .speaker img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    
+    /* Unified sponsor image styles */
+    #sponsors .speaker img {
+      width: 300px;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+  </style>
+  </head>
+
+<body>
+
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#topic">Topics</a></li>
+          <li><a class="nav-link scrollto" href="#cfp">Call for Papers</a></li>
+          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#accepted-paper">Accepted Papers</a></li> -->
+          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="#grant">Student Registration Grant</a></li>
+          <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
+          <li><a class="nav-link scrollto" href="#advisory-board">Advisory Board</a></li>
+          <li><a class="nav-link scrollto" href="#sponsors">Sponsors</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#faq">FAQ</a></li> -->
+          <li><a class="nav-link scrollto" href="mailto:trustworthyagentevolving@gmail.com">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header><section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="200">
+              <h1 class="mb-4 pb-0" style="text-transform: none;">
+            <!-- TODO: Change the title to ICML 2026 Workshop on Trustworthy Evolution of AI Agents-->
+            The 1st Workshop on Trustworthy Evolution of AI Agents
+          </h1>
+          <h2 class="mb-4 pb-0" style="text-transform: none; color: white;">
+            July 10-11, 2026<br>
+            COEX Convention & Exhibition Center, Seoul, South Korea
+          </h2>
+        
+      <!-- <div class="social-links" style="margin-top: 25px;">
+        <div style="margin-bottom: 20px; color: white; font-size: 1.2em;">
+          Thank you everyone for attending our workshop!
+        </div>
+        <div style="margin-bottom: 15px;">
+          <a href="https://neurips.cc/virtual/2025/loc/san-diego/workshop/109539" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #1DA1F2; font-size: 1.3em; font-weight: 500;">
+            Workshop Recording
+          </a>
+        </div>
+        <div>
+          <a href="https://x.com/mti_neurips" target="_blank" rel="noopener noreferrer" style="margin-right: 15px; text-decoration: none; color: #1DA1F2;">
+            Twitter
+          </a>
+          <a href="https://openreview.net/group?id=NeurIPS.cc/2025/Workshop/MTI-LLM" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #1DA1F2;">
+            OpenReview
+          </a>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <main id="main">
+
+    <section id="about">
+        <div class="container position-relative" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>About The Workshop</h2>
+                    <p style="font-size: 18px;">
+                        The emergence of self-evolving LLM-based agentic systems marks a <b>fundamental shift</b> from static pretrained models to autonomous systems. These systems can continuously modify their own models, memories, tools, and architectures through interaction and experience. While this shift is widely viewed as a key step toward long-horizon autonomy, it fundamentally changes the risk profile of AI systems.
+                    </p>
+                    <p style="font-size: 18px;">
+                        <b>The Core Challenge:</b> Unlike static models, failures during self-evolution can recursively cascade and propagate into systemic unreliability, creating a significant barrier to safe deployment. Errors, biases, and vulnerabilities are no longer isolated but can accumulate and amplify over time. Most existing work optimizes self-evolution primarily for short-term performance gains, treating trustworthiness as a downstream or external concern.
+                    </p>
+                    <p style="font-size: 18px;">
+                        This workshop focuses on the design, analysis, and evaluation of trustworthiness in the self-evolution of LLM agents. We aim to connect three core communities to address these systemic risks:
+                    </p>
+                    <ul style="font-size: 18px;">
+                        <li><b>Agentic AI and Architectures:</b> Designing reliable and stable evolution processes for model updating, memory consolidation, and workflow adaptation.</li>
+                        <li><b>AI Safety and Alignment:</b> Addressing alignment drift under continual self-training and failure modes induced by self-generated feedback.</li>
+                        <li><b>Security and Systems:</b> Mitigating threats such as poisoned experience, untrusted tools, and safely sandboxing self-modifying systems.</li>
+                    </ul>
+                    <p style="font-size: 18px;">
+                        By framing trustworthiness as a core constraint throughout the self-evolution pipeline, we seek principled frameworks that ensure the mechanisms driving, constraining, and assessing self-evolution remain intrinsically trustworthy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="topic" class="section-with-bg">
+        <br>
+        <br>
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Topics</h2>
+                <p>We invite submissions examining trustworthiness challenges across different stages of the self-evolution pipeline, including:</p>
+            </div>
+            <section id="topics">
+                <div class="container">
+                    
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                                <b style="font-size: 18px; color: #343a40;">(1) Trustworthy Model and Policy Evolution:</b>
+                                <p style="color: #6c757d; margin-top: 10px;">
+                                    How can the process of policy or parameter evolution be designed to avoid alignment drift and unstable behavior? Topics include safe and controllable self-training dynamics, reliability of self-generated rewards or critiques, robustness under non-stationary objectives, and long-horizon stability-plasticity trade-offs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                                <b style="font-size: 18px; color: #343a40;">(2) Trustworthy Memory and Context Evolution:</b>
+                                <p style="color: #6c757d; margin-top: 10px;">
+                                    How can memory and context evolution proceed without accumulating errors, inconsistencies, or sensitive information? Topics include reliable mechanisms for memory writing, retrieval, consolidation, and forgetting; hallucination propagation across iterations; privacy and data leakage risks; and controllable context management over extended horizons.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                                <b style="font-size: 18px; color: #343a40;">(3) Trustworthy Tool and Skill Evolution:</b>
+                                <p style="color: #6c757d; margin-top: 10px;">
+                                    How can tool and skill evolution be carried out safely as part of self-evolving systems? Topics include safe code and tool synthesis processes, verification and sandboxing of generated tools, robustness to poisoned or adversarial tools, and reliability of tool composition and skill reuse over time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                                <b style="font-size: 18px; color: #343a40;">(4) Trustworthy Agent Architectures and Multi-Agent Co-Evolution:</b>
+                                <p style="color: #6c757d; margin-top: 10px;">
+                                    How can architectural and multi-agent evolution remain stable and predictable under self-modification? Topics include safety and controllability of evolving workflows, emergent failures in multi-agent co-evolution, coordination and incentive risks, and governance mechanisms for agent populations undergoing open-ended evolution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                                <b style="font-size: 18px; color: #343a40;">(5) Trustworthy Evolution Mechanisms and Evaluation:</b>
+                                <p style="color: #6c757d; margin-top: 10px;">
+                                    How can self-evolution mechanisms themselves be driven and assessed in a trustworthy manner? Topics include robust learning signals, prevention of reward hacking and degenerate self-improvement, interpretability of evolution decisions, and long-horizon evaluation protocols that capture cumulative risks rather than single-step failures.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+        </div>
+        <br>
+        <br>
+    </section>
+    
+    <section id="cfp">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Call For Papers</h2>
+            </div>
+            <p>
+                The <b>1st Workshop on Trustworthy Evolution of AI Agents</b> invites submissions that study trustworthiness as a core constraint in the self-evolution of LLM agents. We welcome theoretical and empirical contributions, including novel methods, analytical frameworks, benchmarks, negative results, and position papers.
+            </p>
+            
+            <h3>Key Dates</h3>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Submission Deadline</b>: <span style="color: red; font-weight: bold;">[Month] [Day], 2026, AoE</span></li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Notification Date</b>: <span style="color: red; font-weight: bold;">[Month] [Day], 2026, AoE</span></li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Workshop Date</b>: [Month] [Day], 2026 (08:00 - 17:00)</li>
+            </ul>
+            <p>Deadlines are strict and will not be extended. All deadlines follow the <a href="https://time.is/Anywhere_on_Earth">Anywhere on Earth (AoE)</a> timezone.</p>
+            <br>
+            
+            <h3>Submission Site</h3>
+            <p>
+                Submissions will be managed via OpenReview.
+                <br>
+                <br>
+                <a href="#" target="_blank">Link to OpenReview Submission Portal (TBD)</a>
+            </p>
+            <br>
+            
+            <h3>Submission Guidelines</h3>
+            <h5>Formatting Requirements</h5>
+            <p>
+                Submissions must be in English and follow the Workshop LaTeX Template.
+            </p>
+            <br>
+            <p>Papers must be submitted as a <b>single PDF file</b>. We welcome:</p>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Full Papers (8 pages)</b></li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Short Papers / Position Papers (4 pages)</b></li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>References and appendices are usually not included in the page limit.</li>
+            </ul>
+    
+            <h5>Anonymity</h5>
+            <p>The workshop follows a double-blind review process. Submissions must be anonymized.</p>
+            <br>
+            
+            <h5>Contact</h5>
+            <p>For questions, please contact at <a href="mailto:trustworthyagentevolving@gmail.com">trustworthyagentevolving@gmail.com</a>.</p>
+        </div>
+    </section>
+
+    <section id="speakers" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+          <div class="section-header">
+              <h2>Speakers and Panelists</h2>
+          </div>
+          <div class="row">
+              <div class="col-md-3 col-sm-4 col-6">
+                  <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+                      <img src="assets/img/speakers/dawn_song.jpg" alt="Dawn Song" class="img-fluid">
+                      <br><a href="https://dawnsong.io/" style="font-size: 1.2em; color: #00356B;">Dawn Song</a></br>
+                      <p>University of California, Berkeley</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6">
+                  <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                      <img src="assets/img/speakers/sanmi_koyejo.jpg" alt="Sanmi Koyejo" class="img-fluid">
+                      <br><a href="https://cs.stanford.edu/~sanmi/" style="font-size: 1.2em; color: #00356B;">Sanmi Koyejo</a></br>
+                      <p>Stanford University</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6">
+                  <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+                      <img src="assets/img/speakers/mengdi_wang.jpg" alt="Mengdi Wang" class="img-fluid">
+                      <br><a href="https://ece.princeton.edu/people/mengdi-wang" style="font-size: 1.2em; color: #00356B;">Mengdi Wang</a></br>
+                      <p>Princeton University</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6">
+                  <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                      <img src="assets/img/speakers/manling_li.jpg" alt="Manling Li" class="img-fluid">
+                      <br><a href="https://limanling.github.io/" style="font-size: 1.2em; color: #00356B;">Manling Li</a></br>
+                      <p>Northwestern University</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6">
+                  <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
+                      <img src="assets/img/speakers/bang_liu.jpg" alt="Bang Liu" class="img-fluid">
+                      <br><a href="https://www-labs.iro.umontreal.ca/~liubang/" style="font-size: 1.2em; color: #00356B;">Bang Liu</a></br>
+                      <p>Mila & Université de Montréal</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6">
+                  <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+                      <img src="assets/img/speakers/jie_fu.jpg" alt="Jie Fu" class="img-fluid">
+                      <br><a href="https://bigaidream.github.io/" style="font-size: 1.2em; color: #00356B;">Jie Fu</a></br>
+                      <p>Ubiquant</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6">
+                <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+                      <img src="assets/img/speakers/jieyu_zhao.jpg" alt="Jieyu Zhao" class="img-fluid">
+                      <br><a href="https://jyzhao.net/" style="font-size: 1.2em; color: #00356B;">Jieyu Zhao</a></br>
+                      <p>University of Southern California</p>
+                </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  
+    <section id="schedule" style="padding-top: 20px;">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Schedule</h2>
+                <p>
+                  Tentative workshop schedule. All talks include a Q&amp;A session.
+                  <!-- For the detailed schedule, please refer to 
+                  <a href="https://neurips.cc/virtual/2025/loc/san-diego/workshop/109539" target="_blank" rel="noopener noreferrer">
+                    the official NeurIPS workshop page
+                  </a>. -->
+                </p>
+            </div>
+            <style>
+                .schedule-table td.time, .schedule-table th:first-child { white-space: nowrap; }
+                .schedule-table tr.break-row td { background-color: #fff3cd80 !important; }
+                .schedule-table tr.poster-row td { background-color: #d1ecf180 !important; }
+            </style>
+            <div class="table-responsive">
+                <table class="schedule-table table align-middle">
+                    <thead>
+                        <tr>
+                            <th>Time&nbsp;(PDT)</th>
+                            <th>Session</th>
+                            <th>Speaker</th>
+                            <th>Talk&nbsp;Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time">08:00 – 08:15</td>
+                            <td>Opening Remarks: The Era of Self-Evolving Intelligence</td>
+                            <td colspan="2">Organizers</td>
+                        </tr>
+                        <tr>
+                            <td class="time">08:15 – 09:00</td>
+                            <td>Keynote 1 (Foundations)</td>
+                            <td>Manling Li (Northwestern University)</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td class="time">09:00 – 09:45</td>
+                            <td>Spotlight orals</td>
+                            <td colspan="2">3 Orals (prioritize junior and underrepresented researchers)</td>
+                        </tr>
+                        <tr>
+                            <td class="time">09:45 – 10:30</td>
+                            <td>Keynote 2 (Safety)</td>
+                            <td>Sanmi Koyejo (Stanford University)</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr class="poster-row">
+                          <td class="time">10:30 – 12:00</td>
+                          <td>Poster session 1</td>
+                          <td colspan="2">Poster session, lunch break, and Q&A round table for junior researchers</td>
+                      </tr>
+                        <tr>
+                            <td class="time">12:00 – 12:45</td>
+                            <td>Keynote 3 (Systems/Security)</td>
+                            <td>Dawn Song (University of California, Berkeley)</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:45 – 13:15</td>
+                            <td>Spotlight orals</td>
+                            <td colspan="2">2 Orals (prioritize junior and underrepresented researchers)</td>
+                        </tr>
+                        <tr>
+                          <td class="time">13:15 – 14:00</td>
+                          <td>Keynote 4 (Co-Evolution)</td>
+                          <td>Mengdi Wang</td>
+                          <td>TBD</td>
+                      </tr>
+                        <tr class="poster-row">
+                            <td class="time">14:00 – 15:30</td>
+                            <td>Poster session 2</td>
+                            <td colspan="2">Poster session and coffee break</td>
+                            </tr>
+                        <tr>
+                          <td class="time">15:30 – 16:45</td>
+                          <td>Panel talks and discussion (Slido Q&A)</td>
+                          <td>Bang Liu, Jie Fu, Jieyu Zhao</td>
+                          <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td class="time">16:45 – 17:00</td>
+                            <td>Closing remarks and Best Paper Awards</td>
+                            <td colspan="2">Organizers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="grant">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Student Registration Grant</h2>
+        </div>
+        <p>
+          The <strong> Trustworthy Evolution of AI Agents</strong> Workshop is pleased to announce limited <strong>financial support</strong> for student authors of accepted workshop papers.
+        </p>
+        <p>
+          Thanks to our generous sponsors, we are offering registration reimbursement grants to ensure broader student participation in the community.
+        </p>
+
+        <h3>💡 Eligibility & Coverage</h3>
+        <ul>
+          <li>Only the student registration fee for <strong>workshop</strong> is eligible for reimbursement.</li>
+          <li>Support will be issued <strong>via reimbursement</strong> after the conference (not as direct payment).</li>
+          <li><strong>Travel, accommodation, or other expenses are not covered</strong> under this program.</li>
+        </ul>
+
+        <h3>💬 Reimbursement Policy</h3>
+        <p>
+          Reimbursements will be processed <strong>after the conference</strong> upon submission of a <strong>valid payment receipt</strong> for the student registration.
+        </p>
+        <p>
+          This ensures funds are distributed fairly to participants who <strong>attend and present</strong> at the workshop.
+        </p>
+
+        <h3>🗓️ Key Dates</h3>
+        <ul>
+          <li><strong>Application Deadline</strong>: TBD</li>
+          <li><strong>Notification of Results</strong>: TBD</li>
+        </ul>
+
+        <h3>🎯 Priority Considerations</h3>
+        <p>Preference will be given to:</p>
+        <ul>
+          <li>students presenting accepted papers at our Trustworthy Evolution of AI Agents workshop.</li>
+          <li>students without other funding support (e.g., from advisor or institution).</li>
+          <li>students from underrepresented regions or institutions.</li>
+        </ul>
+
+        <!-- <h3>Registration Grant Recipients</h3>
+        <ul>
+          <li>Huiqi Zou - Northeastern University - PhD</li>
+          <li>Arthur Liang - MIT - Undergraduate</li>
+          <li>Adarsh Kumarappan - California Institute of Technology - Undergraduate</li>
+          <li>Moises Andrade - Georgia Institute of Technology - Incoming PhD Student</li>
+          <li>Mrinal Agarwal - Algoverse - Junior at Emerald High School</li>
+          <li>Yaoyao Qian - Northeastern University - Master's</li>
+          <li>Junhong Shen - Carnegie Mellon University - PhD</li>
+          <li>Xueguang Ma - University of Waterloo - PhD</li>
+          <li>Li Li - University of Southern California - PhD</li>
+          <li>Ao Qu - Massachusetts Institute of Technology - PhD</li>
+          <li>Jingxu Xie - UC Berkeley - PhD</li>
+          <li>Young-Jun Lee - KAIST - PhD</li>
+          <li>Hao Bai - UIUC - PhD</li>
+          <li>Zhiyuan Hu - NUS - PhD</li>
+        </ul> -->
+      </div>
+    </section>
+
+    <section id="organizers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Organizers</h2>
+          <p>This workshop is organized by</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/organizers/haolun_wu.jpg" alt="Haolun Wu" class="img-fluid">
+              <br><a href="https://haolun-wu.github.io/" style="font-size: 1.2em; color: #00356B;">Haolun Wu</a></br>
+              <p>Mila & McGill University</p>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/organizers/ye_yuan.jpg" alt="Ye Yuan" class="img-fluid">
+              <br><a href="https://stevenyuan666.github.io/" style="font-size: 1.2em; color: #00356B;">Ye Yuan</a></br>
+              <p>Mila & McGill University</p>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+            <img src="assets/img/organizers/yankai_chen.jpg" alt="Yankai Chen" class="img-fluid">
+            <br><a href="https://yankai-chen.github.io/" style="font-size: 1.2em; color: #00356B;">Yankai Chen</a></br>
+            <p>MBZUAI</p>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+            <img src="assets/img/organizers/preslav_nakov.jpg" alt="Preslav Nakov" class="img-fluid">
+            <br><a href="https://mbzuai.ac.ae/study/faculty/preslav-nakov/" style="font-size: 1.2em; color: #00356B;">Preslav Nakov</a></br>
+            <p>MBZUAI</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg col-md-4 col-sm-6 col-6">
+                <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                <img src="assets/img/organizers/wenyue_hua.jpg" alt="Wenyue Hua" class="img-fluid">
+                <br><a href="https://wenyueh.github.io/en/" style="font-size: 1.2em; color: #00356B;">Wenyue Hua</a></br>
+                <p>Microsoft Research</p>
+                </div>
+            </div>
+            <div class="col-lg col-md-4 col-sm-6 col-6">
+                <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                <img src="assets/img/organizers/laurent_charlin.jpg" alt="Laurent Charlin" class="img-fluid">
+                <br><a href="https://www.hec.ca/en/profs/laurent.charlin.html" style="font-size: 1.2em; color: #00356B;">Laurent Charlin</a></br>
+                <p>Mila & HEC Montréal</p>
+                </div>
+            </div>
+            <div class="col-lg col-md-4 col-sm-6 col-6">
+                <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                <img src="assets/img/organizers/yoshua_bengio.jpg" alt="Yoshua Bengio" class="img-fluid">
+                <br><a href="https://yoshuabengio.org/profile/" style="font-size: 1.2em; color: #00356B;">Yoshua Bengio</a></br>
+                <p>Mila & Université de Montréal</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advisory-board">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Advisory Board</h2>
+            <p>This workshop is advised by</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg col-md-4 col-sm-6 col-6">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                <img src="assets/img/advisors/xue_liu.jpg" alt="Xue Liu" class="img-fluid">
+                <br><a href="https://cs.mcgill.ca/~xueliu/site/intro.html" style="font-size: 1.2em; color: #00356B;">Xue Liu</a></br>
+                <p>MBZUAI & McGill University</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+
+    <br>
+    <br>
+
+
+    <!-- Sponsors -->
+    <section id="sponsors" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 col-8">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+              <img src="assets/img/sponsors/mbzuai_logo.png" alt="MBZUAI" class="img-fluid">
+              <p style="font-size: 1.2em; font-weight: 500; margin-top: 10px;">MBZUAI</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 col-8">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+              <img src="assets/img/sponsors/mcgill_logo.png" alt="McGill University" class="img-fluid">
+              <p style="font-size: 1.2em; font-weight: 500; margin-top: 10px;">McGill University</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 col-8">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+              <img src="assets/img/sponsors/mila_logo.png" alt="Mila" class="img-fluid">
+              <p style="font-size: 1.2em; font-weight: 500; margin-top: 10px;">Mila - Quebec AI Institute</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <!-- <section id="partners" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Partners</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 col-8">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+              <img src="assets/img/sponsors/prime.jpeg" alt="Prime Intellect" class="img-fluid">
+              <p style="font-size: 1.2em; font-weight: 500; margin-top: 10px;">Prime Intellect</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    
+    <br>
+    <br>
+
+
+
+
+  </main><footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        </div>
+      <div class="credits">
+        Template adopted from <a href="https://workshop-multi-turn-interaction.github.io/">MTI-LLM @ NeurIPS 2025</a>
+      </div>
+    </div>
+  </footer><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
