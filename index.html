@@ -164,153 +164,152 @@
   <main id="main">
 
     <section id="about">
-        <div class="container position-relative" data-aos="fade-up">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>About The Workshop</h2>
-                    <p style="font-size: 18px;">
-                        The emergence of self-evolving LLM-based agentic systems marks a <b>fundamental shift</b> from static pretrained models to autonomous systems. These systems can continuously modify their own models, memories, tools, and architectures through interaction and experience. While this shift is widely viewed as a key step toward long-horizon autonomy, it fundamentally changes the risk profile of AI systems.
-                    </p>
-                    <p style="font-size: 18px;">
-                        <b>The Core Challenge:</b> Unlike static models, failures during self-evolution can recursively cascade and propagate into systemic unreliability, creating a significant barrier to safe deployment. Errors, biases, and vulnerabilities are no longer isolated but can accumulate and amplify over time. Most existing work optimizes self-evolution primarily for short-term performance gains, treating trustworthiness as a downstream or external concern.
-                    </p>
-                    <p style="font-size: 18px;">
-                        This workshop focuses on the design, analysis, and evaluation of trustworthiness in the self-evolution of LLM agents. We aim to connect three core communities to address these systemic risks:
-                    </p>
-                    <ul style="font-size: 18px;">
-                        <li><b>Agentic AI and Architectures:</b> Designing reliable and stable evolution processes for model updating, memory consolidation, and workflow adaptation.</li>
-                        <li><b>AI Safety and Alignment:</b> Addressing alignment drift under continual self-training and failure modes induced by self-generated feedback.</li>
-                        <li><b>Security and Systems:</b> Mitigating threats such as poisoned experience, untrusted tools, and safely sandboxing self-modifying systems.</li>
-                    </ul>
-                    <p style="font-size: 18px;">
-                        By framing trustworthiness as a core constraint throughout the self-evolution pipeline, we seek principled frameworks that ensure the mechanisms driving, constraining, and assessing self-evolution remain intrinsically trustworthy.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="topic" class="section-with-bg">
-        <br>
-        <br>
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2>Topics</h2>
-                <p>We invite submissions examining trustworthiness challenges across different stages of the self-evolution pipeline, including:</p>
-            </div>
-            <section id="topics">
-                <div class="container">
-                    
-                    <div class="row mb-4">
-                        <div class="col-12">
-                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                                <b style="font-size: 18px; color: #343a40;">(1) Trustworthy Model and Policy Evolution:</b>
-                                <p style="color: #6c757d; margin-top: 10px;">
-                                    How can the process of policy or parameter evolution be designed to avoid alignment drift and unstable behavior? Topics include safe and controllable self-training dynamics, reliability of self-generated rewards or critiques, robustness under non-stationary objectives, and long-horizon stability-plasticity trade-offs.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="row mb-4">
-                        <div class="col-12">
-                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                                <b style="font-size: 18px; color: #343a40;">(2) Trustworthy Memory and Context Evolution:</b>
-                                <p style="color: #6c757d; margin-top: 10px;">
-                                    How can memory and context evolution proceed without accumulating errors, inconsistencies, or sensitive information? Topics include reliable mechanisms for memory writing, retrieval, consolidation, and forgetting; hallucination propagation across iterations; privacy and data leakage risks; and controllable context management over extended horizons.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="row mb-4">
-                        <div class="col-12">
-                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                                <b style="font-size: 18px; color: #343a40;">(3) Trustworthy Tool and Skill Evolution:</b>
-                                <p style="color: #6c757d; margin-top: 10px;">
-                                    How can tool and skill evolution be carried out safely as part of self-evolving systems? Topics include safe code and tool synthesis processes, verification and sandboxing of generated tools, robustness to poisoned or adversarial tools, and reliability of tool composition and skill reuse over time.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="row mb-4">
-                        <div class="col-12">
-                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                                <b style="font-size: 18px; color: #343a40;">(4) Trustworthy Agent Architectures and Multi-Agent Co-Evolution:</b>
-                                <p style="color: #6c757d; margin-top: 10px;">
-                                    How can architectural and multi-agent evolution remain stable and predictable under self-modification? Topics include safety and controllability of evolving workflows, emergent failures in multi-agent co-evolution, coordination and incentive risks, and governance mechanisms for agent populations undergoing open-ended evolution.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="row mb-4">
-                        <div class="col-12">
-                            <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                                <b style="font-size: 18px; color: #343a40;">(5) Trustworthy Evolution Mechanisms and Evaluation:</b>
-                                <p style="color: #6c757d; margin-top: 10px;">
-                                    How can self-evolution mechanisms themselves be driven and assessed in a trustworthy manner? Topics include robust learning signals, prevention of reward hacking and degenerate self-improvement, interpretability of evolution decisions, and long-horizon evaluation protocols that capture cumulative risks rather than single-step failures.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
-        </div>
-        <br>
-        <br>
-    </section>
-    
-    <section id="cfp">
-        <div class="container" data-aos="fade-up">
-            <div class="section-header">
-                <h2>Call For Papers</h2>
-            </div>
-            <p>
-                The <b>1st Workshop on Trustworthy Evolution of AI Agents</b> invites submissions that study trustworthiness as a core constraint in the self-evolution of LLM agents. We welcome theoretical and empirical contributions, including novel methods, analytical frameworks, benchmarks, negative results, and position papers.
-            </p>
-            
-            <h3>Key Dates</h3>
-            <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Submission Deadline</b>: <span style="color: red; font-weight: bold;">[Month] [Day], 2026, AoE</span></li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Notification Date</b>: <span style="color: red; font-weight: bold;">[Month] [Day], 2026, AoE</span></li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Workshop Date</b>: [Month] [Day], 2026 (08:00 - 17:00)</li>
-            </ul>
-            <p>Deadlines are strict and will not be extended. All deadlines follow the <a href="https://time.is/Anywhere_on_Earth">Anywhere on Earth (AoE)</a> timezone.</p>
-            <br>
-            
-            <h3>Submission Site</h3>
-            <p>
-                Submissions will be managed via OpenReview.
-                <br>
-                <br>
-                <a href="#" target="_blank">Link to OpenReview Submission Portal (TBD)</a>
-            </p>
-            <br>
-            
-            <h3>Submission Guidelines</h3>
-            <h5>Formatting Requirements</h5>
-            <p>
-                Submissions must be in English and follow the Workshop LaTeX Template.
-            </p>
-            <br>
-            <p>Papers must be submitted as a <b>single PDF file</b>. We welcome:</p>
-            <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Full Papers (8 pages)</b></li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Short Papers / Position Papers (4 pages)</b></li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span>References and appendices are usually not included in the page limit.</li>
-            </ul>
-    
-            <h5>Anonymity</h5>
-            <p>The workshop follows a double-blind review process. Submissions must be anonymized.</p>
-            <br>
-            
-            <h5>Contact</h5>
-            <p>For questions, please contact at <a href="mailto:trustworthyagentevolving@gmail.com">trustworthyagentevolving@gmail.com</a>.</p>
-        </div>
-    </section>
+      <div class="container position-relative" data-aos="fade-up">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h2>About The Workshop</h2>
+                  <p style="font-size: 18px;">
+                      The emergence of self-evolving agentic systems marks a <b>fundamental shift</b> from static pretrained models to dynamic systems. These systems can continuously modify their own models, memories, tools, and architectures through interaction and experience. While this shift is widely viewed as a key step toward long-horizon autonomy, it fundamentally changes the risk profile of AI systems.
+                  </p>
+                  <p style="font-size: 18px;">
+                      <b>The Core Challenge:</b> Unlike static models, failures during self-evolution can recursively cascade and propagate into systemic unreliability, creating a significant barrier to safe deployment. Errors, biases, and vulnerabilities are no longer isolated but can accumulate and amplify over time. Most existing work, however, optimizes self-evolution primarily for short-term performance gains, treating trustworthiness as a downstream or external concern.
+                  </p>
+                  <p style="font-size: 18px;">
+                      This workshop focuses on the design, analysis, and evaluation of trustworthiness in the self-evolution of AI agents. We aim to connect three core communities to address these systemic risks:
+                  </p>
+                  <ul style="font-size: 18px;">
+                      <li><b>Agentic AI and Architectures:</b> For researchers studying mechanisms of self-evolution, such as model updating, memory consolidation, tool synthesis, and workflow adaptation, with an emphasis on designing reliable and stable evolution processes.</li>
+                      <li><b>AI Safety and Alignment:</b> For researchers concerned with the safety of adaptive systems, addressing risks like alignment drift under continual self-training and failure modes induced by self-generated feedback.</li>
+                      <li><b>Security and Systems:</b> For researchers working on robustness and system reliability, addressing threats such as poisoned experience, untrusted tools, and the challenges of safely sandboxing self-modifying systems.</li>
+                  </ul>
+                  <p style="font-size: 18px;">
+                      By framing trustworthiness as a core constraint throughout the self-evolution pipeline, we seek principled frameworks that ensure the mechanisms driving, constraining, and assessing self-evolution remain intrinsically trustworthy.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <section id="topic" class="section-with-bg">
+      <br>
+      <br>
+      <div class="container" data-aos="fade-up">
+          <div class="section-header">
+              <h2>Topics</h2>
+              <p>We particularly welcome work that examines trustworthiness challenges arising across different stages of the self-evolution pipeline, including:</p>
+          </div>
+          <section id="topics">
+              <div class="container">
+                  
+                  <div class="row mb-4">
+                      <div class="col-12">
+                          <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                              <b style="font-size: 18px; color: #343a40;">(1) Trustworthy Model and Policy Evolution:</b>
+                              <p style="color: #6c757d; margin-top: 10px;">
+                                  How can the process of policy or parameter evolution be designed to avoid alignment drift and unstable behavior? Topics include safe and controllable self-training dynamics, reliability of self-generated rewards or critiques, robustness under non-stationary objectives, and long-horizon stability-plasticity trade-offs.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="row mb-4">
+                      <div class="col-12">
+                          <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                              <b style="font-size: 18px; color: #343a40;">(2) Trustworthy Memory and Context Evolution:</b>
+                              <p style="color: #6c757d; margin-top: 10px;">
+                                  How can memory and context evolution proceed without accumulating errors, inconsistencies, or sensitive information? Topics include reliable mechanisms for memory writing, retrieval, consolidation, and forgetting; hallucination propagation across iterations; privacy and data leakage risks; and controllable context management over extended horizons.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="row mb-4">
+                      <div class="col-12">
+                          <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                              <b style="font-size: 18px; color: #343a40;">(3) Trustworthy Tool and Skill Evolution:</b>
+                              <p style="color: #6c757d; margin-top: 10px;">
+                                  How can tool and skill evolution be carried out safely as part of self-evolving systems? Topics include safe code and tool synthesis processes, verification and sandboxing of generated tools, robustness to poisoned or adversarial tools, and reliability of tool composition and skill reuse over time.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="row mb-4">
+                      <div class="col-12">
+                          <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                              <b style="font-size: 18px; color: #343a40;">(4) Trustworthy Agent Architectures and Multi-Agent Co-Evolution:</b>
+                              <p style="color: #6c757d; margin-top: 10px;">
+                                  How can architectural and multi-agent evolution remain stable and predictable under self-modification? Topics include safety and controllability of evolving workflows, emergent failures in multi-agent co-evolution, coordination and incentive risks, and governance mechanisms for agent populations undergoing open-ended evolution.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="row mb-4">
+                      <div class="col-12">
+                          <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                              <b style="font-size: 18px; color: #343a40;">(5) Trustworthy Evolution Mechanisms and Evaluation:</b>
+                              <p style="color: #6c757d; margin-top: 10px;">
+                                  How can self-evolution mechanisms themselves be driven and assessed in a trustworthy manner? Topics include robust learning signals, prevention of reward hacking and degenerate self-improvement, interpretability of evolution decisions, and long-horizon evaluation protocols that capture cumulative risks rather than single-step failures.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+          </section>
+      </div>
+      <br>
+      <br>
+  </section>
+  
+  <section id="cfp">
+      <div class="container" data-aos="fade-up">
+          <div class="section-header">
+              <h2>Call For Papers</h2>
+          </div>
+          <p>
+              The <b>1st Workshop on Trustworthy Evolution of AI Agents</b> invites submissions that study trustworthiness as a core constraint in the self-evolution of AI agents. We welcome theoretical and empirical contributions, including novel methods, analytical frameworks, benchmarks, negative results, and position papers.
+          </p>
+          
+          <h3>Key Dates</h3>
+          <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Submission Deadline</b>: <span style="color: red; font-weight: bold;">[Month] [Day], 2026, AoE</span></li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Notification Date</b>: <span style="color: red; font-weight: bold;">[Month] [Day], 2026, AoE</span></li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Workshop Date</b>: [Month] [Day], 2026 (08:00 - 17:00) </li>
+          </ul>
+          <p>Deadlines are strict and will not be extended. All deadlines follow the <a href="https://time.is/Anywhere_on_Earth">Anywhere on Earth (AoE)</a> timezone.</p>
+          <br>
+          
+          <h3>Submission Site</h3>
+          <p>
+              Submissions will be managed via OpenReview.
+              <br>
+              <br>
+              <a href="#" target="_blank">Link to OpenReview Submission Portal (TBD)</a>
+          </p>
+  
+          <br>
+          
+          <h3>Submission Guidelines</h3>
+          <h5>Formatting Requirements</h5>
+          <p>
+              Submissions must be in English and follow the ICML 2026 Workshop LaTeX Template.
+          </p>
+          <p>Papers must be submitted as a <b>single PDF file</b>. We welcome:</p>
+          <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Full Papers (8 pages)</b></li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Short Papers / Position Papers (4 pages)</b></li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>References and appendices are usually not included in the page limit.</li>
+          </ul>
+  
+          <h5>Anonymity</h5>
+          <p>The workshop follows a double-blind review process. Submissions must be anonymized.</p>
+          
+          <h5>Contact</h5>
+          <p>For questions, please contact at <a href="mailto:trustworthyagentevolving@gmail.com">trustworthyagentevolving@gmail.com</a>.</p>
+      </div>
+  </section>
 
     <section id="speakers" class="section-with-bg">
       <div class="container" data-aos="fade-up">
@@ -318,13 +317,13 @@
               <h2>Speakers and Panelists</h2>
           </div>
           <div class="row">
-              <div class="col-md-3 col-sm-4 col-6">
+              <!-- <div class="col-md-3 col-sm-4 col-6">
                   <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
                       <img src="assets/img/speakers/dawn_song.jpg" alt="Dawn Song" class="img-fluid">
                       <br><a href="https://dawnsong.io/" style="font-size: 1.2em; color: #00356B;">Dawn Song</a></br>
                       <p>University of California, Berkeley</p>
                   </div>
-              </div>
+              </div> -->
               <div class="col-md-3 col-sm-4 col-6">
                   <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
                       <img src="assets/img/speakers/sanmi_koyejo.jpg" alt="Sanmi Koyejo" class="img-fluid">
@@ -332,7 +331,7 @@
                       <p>Stanford University</p>
                   </div>
               </div>
-              <div class="col-md-3 col-sm-4 col-6">
+              <!-- <div class="col-md-3 col-sm-4 col-6">
                   <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
                       <img src="assets/img/speakers/mengdi_wang.jpg" alt="Mengdi Wang" class="img-fluid">
                       <br><a href="https://ece.princeton.edu/people/mengdi-wang" style="font-size: 1.2em; color: #00356B;">Mengdi Wang</a></br>
@@ -345,7 +344,7 @@
                       <br><a href="https://limanling.github.io/" style="font-size: 1.2em; color: #00356B;">Manling Li</a></br>
                       <p>Northwestern University</p>
                   </div>
-              </div>
+              </div> -->
               <div class="col-md-3 col-sm-4 col-6">
                   <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
                       <img src="assets/img/speakers/bang_liu.jpg" alt="Bang Liu" class="img-fluid">
@@ -353,7 +352,15 @@
                       <p>Mila & Université de Montréal</p>
                   </div>
               </div>
+
               <div class="col-md-3 col-sm-4 col-6">
+                <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
+                    <img src="assets/img/speakers/tao_zhang.png" alt="Tao Zhang" class="img-fluid">
+                    <br><a href="https://www.linkedin.com/in/hidecloud/?originalSubdomain=sg" style="font-size: 1.2em; color: #00356B;">Tao Zhang</a></br>
+                    <p>Manus AI</p>
+                </div>
+            </div>
+              <!-- <div class="col-md-3 col-sm-4 col-6">
                   <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
                       <img src="assets/img/speakers/jie_fu.jpg" alt="Jie Fu" class="img-fluid">
                       <br><a href="https://bigaidream.github.io/" style="font-size: 1.2em; color: #00356B;">Jie Fu</a></br>
@@ -366,7 +373,7 @@
                       <br><a href="https://jyzhao.net/" style="font-size: 1.2em; color: #00356B;">Jieyu Zhao</a></br>
                       <p>University of Southern California</p>
                 </div>
-            </div>
+            </div> -->
           </div>
       </div>
   </section>
@@ -406,8 +413,8 @@
                         </tr>
                         <tr>
                             <td class="time">08:15 – 09:00</td>
-                            <td>Keynote 1 (Foundations)</td>
-                            <td>Manling Li (Northwestern University)</td>
+                            <td>Keynote 1</td>
+                            <td>Sanmi Koyejo (Stanford University)</td>
                             <td>TBD</td>
                         </tr>
                         <tr>
@@ -417,8 +424,8 @@
                         </tr>
                         <tr>
                             <td class="time">09:45 – 10:30</td>
-                            <td>Keynote 2 (Safety)</td>
-                            <td>Sanmi Koyejo (Stanford University)</td>
+                            <td>Keynote 2</td>
+                            <td>TBD</td>
                             <td>TBD</td>
                         </tr>
                         <tr class="poster-row">
@@ -428,8 +435,8 @@
                       </tr>
                         <tr>
                             <td class="time">12:00 – 12:45</td>
-                            <td>Keynote 3 (Systems/Security)</td>
-                            <td>Dawn Song (University of California, Berkeley)</td>
+                            <td>Keynote 3</td>
+                            <td>TBD</td>
                             <td>TBD</td>
                         </tr>
                         <tr>
@@ -439,8 +446,8 @@
                         </tr>
                         <tr>
                           <td class="time">13:15 – 14:00</td>
-                          <td>Keynote 4 (Co-Evolution)</td>
-                          <td>Mengdi Wang</td>
+                          <td>Keynote 4</td>
+                          <td>TBD</td>
                           <td>TBD</td>
                       </tr>
                         <tr class="poster-row">
@@ -451,7 +458,7 @@
                         <tr>
                           <td class="time">15:30 – 16:45</td>
                           <td>Panel talks and discussion (Slido Q&A)</td>
-                          <td>Bang Liu, Jie Fu, Jieyu Zhao</td>
+                          <td>Bang Liu, Tao Zhang (Tentative)</td>
                           <td>TBD</td>
                         </tr>
                         <tr>
@@ -544,14 +551,6 @@
 
           <div class="col-lg col-md-4 col-sm-6 col-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-              <img src="assets/img/organizers/ye_yuan.jpg" alt="Ye Yuan" class="img-fluid">
-              <br><a href="https://stevenyuan666.github.io/" style="font-size: 1.2em; color: #00356B;">Ye Yuan</a></br>
-              <p>Mila & McGill University</p>
-            </div>
-          </div>
-
-          <div class="col-lg col-md-4 col-sm-6 col-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
             <img src="assets/img/organizers/yankai_chen.jpg" alt="Yankai Chen" class="img-fluid">
             <br><a href="https://yankai-chen.github.io/" style="font-size: 1.2em; color: #00356B;">Yankai Chen</a></br>
             <p>MBZUAI</p>
@@ -560,13 +559,11 @@
 
           <div class="col-lg col-md-4 col-sm-6 col-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-            <img src="assets/img/organizers/preslav_nakov.jpg" alt="Preslav Nakov" class="img-fluid">
-            <br><a href="https://mbzuai.ac.ae/study/faculty/preslav-nakov/" style="font-size: 1.2em; color: #00356B;">Preslav Nakov</a></br>
-            <p>MBZUAI</p>
+              <img src="assets/img/organizers/ye_yuan.jpg" alt="Ye Yuan" class="img-fluid">
+              <br><a href="https://stevenyuan666.github.io/" style="font-size: 1.2em; color: #00356B;">Ye Yuan</a></br>
+              <p>Mila & McGill University</p>
             </div>
           </div>
-        </div>
-
 
         <div class="row">
             <div class="col-lg col-md-4 col-sm-6 col-6">
@@ -585,8 +582,8 @@
             </div>
             <div class="col-lg col-md-4 col-sm-6 col-6">
                 <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-                <img src="assets/img/organizers/yoshua_bengio.jpg" alt="Yoshua Bengio" class="img-fluid">
-                <br><a href="https://yoshuabengio.org/profile/" style="font-size: 1.2em; color: #00356B;">Yoshua Bengio</a></br>
+                <img src="assets/img/organizers/bang_liu.jpg" alt="Bang Liu" class="img-fluid">
+                <br><a href="https://www-labs.iro.umontreal.ca/~liubang/" style="font-size: 1.2em; color: #00356B;">Bang Liu</a></br>
                 <p>Mila & Université de Montréal</p>
                 </div>
             </div>
@@ -610,6 +607,21 @@
               </div>
             </div>
   
+            <!-- <div class="col-lg col-md-4 col-sm-6 col-6">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/advisors/preslav_nakov.jpg" alt="Preslav Nakov" class="img-fluid">
+              <br><a href="https://mbzuai.ac.ae/study/faculty/preslav-nakov/" style="font-size: 1.2em; color: #00356B;">Preslav Nakov</a></br>
+              <p>MBZUAI</p>
+              </div>
+            </div>
+
+            <div class="col-lg col-md-4 col-sm-6 col-6">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/advisors/yoshua_bengio.jpg" alt="Yoshua Bengio" class="img-fluid">
+              <br><a href="https://yoshuabengio.org/profile/" style="font-size: 1.2em; color: #00356B;">Yoshua Bengio</a></br>
+              <p>Mila & Université de Montréal</p>
+              </div>
+          </div> -->
           </div>
         </div>
       </section>
@@ -619,7 +631,7 @@
 
 
     <!-- Sponsors -->
-    <section id="sponsors" class="section-with-bg">
+    <!-- <section id="sponsors" class="section-with-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Sponsors</h2>
@@ -649,7 +661,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Partners -->
     <!-- <section id="partners" class="section-with-bg">
