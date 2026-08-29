@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>The 1st Workshop on Trustworthy Evolution of AI Agents</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>AAAI 2027 Workshop on Trustworthy Evolution of AI Agents</title>
+  <meta content="AAAI 2027 Workshop on Trustworthy Evolution of AI Agents: An Agent Operating System Perspective. Montréal, Canada, February 22–23, 2027." name="description">
+  <meta content="AAAI, workshop, trustworthy agents, agent operating system, AI agents" name="keywords">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -90,6 +90,31 @@
       border-radius: 50%;
       margin-bottom: 15px;
     }
+
+    #supporting-team .speaker img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .photo-placeholder {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      background: #e9ecef;
+      border: 1px dashed #adb5bd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6c757d;
+      font-size: 13px;
+      text-align: center;
+      padding: 12px;
+      line-height: 1.3;
+    }
     
     /* Unified sponsor image styles */
     #sponsors .speaker img {
@@ -121,6 +146,7 @@
           <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="#grant">Student Registration Grant</a></li>
           <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
+          <li><a class="nav-link scrollto" href="#supporting-team">Supporting Team</a></li>
           <li><a class="nav-link scrollto" href="#advisory-board">Advisory Board</a></li>
           <li><a class="nav-link scrollto" href="#sponsors">Sponsors</a></li>
           <!-- <li><a class="nav-link scrollto" href="#faq">FAQ</a></li> -->
@@ -133,12 +159,12 @@
   </header><section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="200">
               <h1 class="mb-4 pb-0" style="text-transform: none;">
-            <!-- TODO: Change the title to ICML 2026 Workshop on Trustworthy Evolution of AI Agents-->
-            The 1st Workshop on Trustworthy Evolution of AI Agents
+            AAAI 2027 Workshop on Trustworthy Evolution of AI Agents
           </h1>
           <h2 class="mb-4 pb-0" style="text-transform: none; color: white;">
-            December 11-12, 2026<br>
-            International Convention Centre, Sydney, Australia
+            An Agent Operating System Perspective<br>
+            February 22–23, 2027<br>
+            Palais des congrès de Montréal, Montréal, Canada
           </h2>
         
       <!-- <div class="social-links" style="margin-top: 25px;">
@@ -169,21 +195,16 @@
               <div class="col-lg-12">
                   <h2>About The Workshop</h2>
                   <p style="font-size: 18px;">
-                      The emergence of self-evolving agentic systems marks a <b>fundamental shift</b> from static pretrained models to dynamic systems. These systems can continuously modify their own models, memories, tools, and architectures through interaction and experience. While this shift is widely viewed as a key step toward long-horizon autonomy, it fundamentally changes the risk profile of AI systems.
+                      AI agents are shifting from static pretrained systems to adaptive systems that update their models, memories, tools, and architectures over time. Evolution can arise through <b>self-evolution</b>, <b>co-evolution</b> with other agents or users, and <b>environment-driven</b> adaptation under non-stationary tools, interfaces, and tasks. As agents operate in long-horizon workflows, the central question extends beyond single-turn performance to whether that evolution remains trustworthy: small errors can accumulate, persist, and amplify in stateful systems.
                   </p>
                   <p style="font-size: 18px;">
-                      <b>The Core Challenge:</b> Unlike static models, failures during self-evolution can recursively cascade and propagate into systemic unreliability, creating a significant barrier to safe deployment. Errors, biases, and vulnerabilities are no longer isolated but can accumulate and amplify over time. Most existing work, however, optimizes self-evolution primarily for short-term performance gains, treating trustworthiness as a downstream or external concern.
+                      <b>The Core Challenge:</b> Many trustworthiness failures in evolving agents are systems failures. Corrupted memory persists when there is no provenance, observation–inference separation, or rollback. Alignment drift accumulates when biased updates are applied irreversibly, without staging, regression checks, or an audit trail. Unsafe tool use persists when tool calls lack permission checks, sandboxing, and revocation. In each case, the model is asked to enforce by disposition what mature computing systems enforce by construction.
                   </p>
                   <p style="font-size: 18px;">
-                      This workshop focuses on the design, analysis, and evaluation of trustworthiness in the self-evolution of AI agents. We aim to connect three core communities to address these systemic risks:
+                      This workshop examines trustworthy evolution through the lens of an <b>agent operating system</b>: the memory, capability, runtime, update-management, and observability subsystems that sit beneath an evolving agent. Operating systems did not make programs correct; they made unreliable programs safer to run through isolation, privilege separation, recoverable state, versioning, and auditing. We ask which classical OS abstractions transfer to stochastic, learning components and which break.
                   </p>
-                  <ul style="font-size: 18px;">
-                      <li><b>Agentic AI and Architectures:</b> For researchers studying mechanisms of self-evolution, such as model updating, memory consolidation, tool synthesis, and workflow adaptation, with an emphasis on designing reliable and stable evolution processes.</li>
-                      <li><b>AI Safety and Alignment:</b> For researchers concerned with the safety of adaptive systems, addressing risks like alignment drift under continual self-training and failure modes induced by self-generated feedback.</li>
-                      <li><b>Security and Systems:</b> For researchers working on robustness and system reliability, addressing threats such as poisoned experience, untrusted tools, and the challenges of safely sandboxing self-modifying systems.</li>
-                  </ul>
                   <p style="font-size: 18px;">
-                      By framing trustworthiness as a core constraint throughout the self-evolution pipeline, we seek principled frameworks that ensure the mechanisms driving, constraining, and assessing self-evolution remain intrinsically trustworthy.
+                      The central question is: <b>how should we design the systems layer beneath an evolving agent so that its evolution remains reliable over long horizons?</b> We bring together agent learning, ML systems, and AI safety to study how agents change, how errors accumulate, and how harmful updates can be detected, attributed, and reversed without sacrificing performance.
                   </p>
               </div>
           </div>
@@ -196,7 +217,7 @@
       <div class="container" data-aos="fade-up">
           <div class="section-header">
               <h2>Topics</h2>
-              <p>We particularly welcome work that examines trustworthiness challenges arising across different stages of the self-evolution pipeline, including:</p>
+              <p>Each topic pairs a dimension along which agents evolve with the subsystem that must keep that evolution trustworthy.</p>
           </div>
           <section id="topics">
               <div class="container">
@@ -204,9 +225,9 @@
                   <div class="row mb-4">
                       <div class="col-12">
                           <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                              <b style="font-size: 18px; color: #343a40;">(1) Trustworthy Model and Policy Evolution:</b>
+                              <b style="font-size: 18px; color: #343a40;">(1) Trustworthy Memory Evolution (the state subsystem):</b>
                               <p style="color: #6c757d; margin-top: 10px;">
-                                  How can the process of policy or parameter evolution be designed to avoid alignment drift and unstable behavior? Topics include safe and controllable self-training dynamics, reliability of self-generated rewards or critiques, robustness under non-stationary objectives, and long-horizon stability-plasticity trade-offs.
+                                  Provenance and write policies, consolidation and forgetting, transactional writes and snapshots, isolation across users and tenants, hallucination propagation, and leakage from persistent state.
                               </p>
                           </div>
                       </div>
@@ -215,9 +236,9 @@
                   <div class="row mb-4">
                       <div class="col-12">
                           <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                              <b style="font-size: 18px; color: #343a40;">(2) Trustworthy Memory and Context Evolution:</b>
+                              <b style="font-size: 18px; color: #343a40;">(2) Trustworthy Tool and Skill Evolution (the capability interface):</b>
                               <p style="color: #6c757d; margin-top: 10px;">
-                                  How can memory and context evolution proceed without accumulating errors, inconsistencies, or sensitive information? Topics include reliable mechanisms for memory writing, retrieval, consolidation, and forgetting; hallucination propagation across iterations; privacy and data leakage risks; and controllable context management over extended horizons.
+                                  Tools as capability-mediated system calls: least privilege, separation of untrusted content from privileged execution, sandboxing and verification of synthesized tools, revocation, and supply-chain risk in tool registries.
                               </p>
                           </div>
                       </div>
@@ -226,9 +247,9 @@
                   <div class="row mb-4">
                       <div class="col-12">
                           <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                              <b style="font-size: 18px; color: #343a40;">(3) Trustworthy Tool and Skill Evolution:</b>
+                              <b style="font-size: 18px; color: #343a40;">(3) Trustworthy Model and Policy Evolution (the update and release layer):</b>
                               <p style="color: #6c757d; margin-top: 10px;">
-                                  How can tool and skill evolution be carried out safely as part of self-evolving systems? Topics include safe code and tool synthesis processes, verification and sandboxing of generated tools, robustness to poisoned or adversarial tools, and reliability of tool composition and skill reuse over time.
+                                  Self-improvement as a release process: versioning of prompts, policies, and weights; staged rollout and canarying; regression suites; rollback without collateral capability loss; reliability of self-generated critiques; and prevention of reward hacking.
                               </p>
                           </div>
                       </div>
@@ -237,9 +258,9 @@
                   <div class="row mb-4">
                       <div class="col-12">
                           <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                              <b style="font-size: 18px; color: #343a40;">(4) Trustworthy Agent Architectures and Multi-Agent Co-Evolution:</b>
+                              <b style="font-size: 18px; color: #343a40;">(4) Trustworthy Multi-Agent Co-Evolution (the runtime and scheduler):</b>
                               <p style="color: #6c757d; margin-top: 10px;">
-                                  How can architectural and multi-agent evolution remain stable and predictable under self-modification? Topics include safety and controllability of evolving workflows, emergent failures in multi-agent co-evolution, coordination and incentive risks, and governance mechanisms for agent populations undergoing open-ended evolution.
+                                  Lifecycle and concurrency for agent populations, resource accounting over tokens, time, and side effects, preemption of runaway loops, checkpointing, blast-radius limits, and emergent failures under co-adaptation.
                               </p>
                           </div>
                       </div>
@@ -248,9 +269,9 @@
                   <div class="row mb-4">
                       <div class="col-12">
                           <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
-                              <b style="font-size: 18px; color: #343a40;">(5) Trustworthy Evolution Mechanisms and Evaluation:</b>
+                              <b style="font-size: 18px; color: #343a40;">(5) Evaluating Trustworthy Evolution (the observability and audit layer):</b>
                               <p style="color: #6c757d; margin-top: 10px;">
-                                  How can self-evolution mechanisms themselves be driven and assessed in a trustworthy manner? Topics include robust learning signals, prevention of reward hacking and degenerate self-improvement, interpretability of evolution decisions, and long-horizon evaluation protocols that capture cumulative risks rather than single-step failures.
+                                  Structured traces attributing an outcome to the update that caused it, continuous monitoring rather than one-off benchmarking, oversight interfaces that escalate before irreversible updates, and stateful long-horizon testbeds.
                               </p>
                           </div>
                       </div>
@@ -269,14 +290,14 @@
               <h2>Call For Papers</h2>
           </div>
           <p>
-              The <b>1st Workshop on Trustworthy Evolution of AI Agents</b> invites submissions that study trustworthiness as a core constraint in the self-evolution of AI agents. We welcome theoretical and empirical contributions, including novel methods, analytical frameworks, benchmarks, negative results, and position papers.
+              The <b>AAAI 2027 Workshop on Trustworthy Evolution of AI Agents</b> invites submissions that treat trustworthy agent evolution as a systems problem. We welcome mechanisms and abstractions, system designs, benchmarks, negative results, and position papers.
           </p>
           
           <h3>Key Dates</h3>
           <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Submission Deadline</b>: <span style="color: red; font-weight: bold;">August 29, 2026, AoE</span></li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Notification Date</b>: <span style="color: red; font-weight: bold;">September 29, 2026, AoE</span></li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Workshop Date</b>: December 11-12, 2026 </li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Submission Deadline</b>: <span style="color: red; font-weight: bold;">November 20, 2026, AoE</span></li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Notification Date</b>: <span style="color: red; font-weight: bold;">December 2, 2026, AoE</span></li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><b>Workshop Date</b>: February 22–23, 2027 (one-day workshop; exact day TBA)</li>
           </ul>
           <p>Deadlines are strict and will not be extended. All deadlines follow the <a href="https://time.is/Anywhere_on_Earth">Anywhere on Earth (AoE)</a> timezone.</p>
           <br>
@@ -294,7 +315,7 @@
           <h3>Submission Guidelines</h3>
           <h5>Formatting Requirements</h5>
           <p>
-              Submissions must be in English and follow the NeurIPS 2026 Workshop LaTeX Template.
+              Submissions must be in English and follow the AAAI 2027 author kit / workshop LaTeX template (TBD).
           </p>
           <p>Papers must be submitted as a <b>single PDF file</b>. We welcome:</p>
           <ul class="fa-ul">
@@ -321,7 +342,7 @@
                   <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
                       <img src="assets/img/speakers/yoshua_bengio.jpg" alt="Yoshua Bengio" class="img-fluid">
                       <br><a href="https://yoshuabengio.org/profile/" style="font-size: 1.2em; color: #00356B;">Yoshua Bengio</a></br>
-                      <p>Mila & Université de Montréal</p>
+                      <p>Mila, Université de Montréal &amp; LawZero</p>
                   </div>
               </div>
               <div class="col-md-3 col-sm-4 col-6">
@@ -340,41 +361,25 @@
               </div>
               <div class="col-md-3 col-sm-4 col-6">
                 <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-                    <img src="assets/img/speakers/natasha_jaques.jpg" alt="Natasha Jaques" class="img-fluid">
-                    <br><a href="https://www.cs.washington.edu/people/faculty/natasha-jaques/" style="font-size: 1.2em; color: #00356B;">Natasha Jaques</a></br>
-                    <p>University of Washington</p> 
+                    <img src="assets/img/speakers/yongfeng_zhang.jpeg" alt="Yongfeng Zhang" class="img-fluid">
+                    <br><a href="https://yongfeng.me/" style="font-size: 1.2em; color: #00356B;">Yongfeng Zhang</a></br>
+                    <p>Rutgers University<br><span style="font-size: 0.9em; color: #6c757d;">(tentative)</span></p>
                 </div>
             </div>
-              <!-- <div class="col-md-3 col-sm-4 col-6">
-                  <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
-                      <img src="assets/img/speakers/mengdi_wang.jpg" alt="Mengdi Wang" class="img-fluid">
-                      <br><a href="https://ece.princeton.edu/people/mengdi-wang" style="font-size: 1.2em; color: #00356B;">Mengdi Wang</a></br>
-                      <p>Princeton University</p>
-                  </div>
-              </div>
               <div class="col-md-3 col-sm-4 col-6">
-                  <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-                      <img src="assets/img/speakers/manling_li.jpg" alt="Manling Li" class="img-fluid">
-                      <br><a href="https://limanling.github.io/" style="font-size: 1.2em; color: #00356B;">Manling Li</a></br>
-                      <p>Northwestern University</p>
-                  </div>
-              </div> -->
-              <!-- <div class="col-md-3 col-sm-4 col-6">
-                  <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
-                      <img src="assets/img/speakers/bang_liu.jpg" alt="Bang Liu" class="img-fluid">
-                      <br><a href="https://www-labs.iro.umontreal.ca/~liubang/" style="font-size: 1.2em; color: #00356B;">Bang Liu</a></br>
-                      <p>Mila & Université de Montréal</p>
-                  </div>
-              </div> -->
-
+                <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                    <img src="assets/img/speakers/natasha_jaques.jpg" alt="Natasha Jaques" class="img-fluid">
+                    <br><a href="https://www.cs.washington.edu/people/faculty/natasha-jaques/" style="font-size: 1.2em; color: #00356B;">Natasha Jaques</a></br>
+                    <p>University of Washington &amp; Google DeepMind<br><span style="font-size: 0.9em; color: #6c757d;">(tentative panelist)</span></p>
+                </div>
+            </div>
               <div class="col-md-3 col-sm-4 col-6">
                 <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
                     <img src="assets/img/speakers/tao_zhang.png" alt="Tao Zhang" class="img-fluid">
                     <br><a href="https://www.linkedin.com/in/hidecloud/?originalSubdomain=sg" style="font-size: 1.2em; color: #00356B;">Tao Zhang</a></br>
-                    <p>Manus AI</p>
+                    <p>Manus AI<br><span style="font-size: 0.9em; color: #6c757d;">(tentative panelist)</span></p>
                 </div>
             </div>
-
             <div class="col-md-3 col-sm-4 col-6">
               <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
                   <img src="assets/img/speakers/bill_zhu.jpeg" alt="Zheqing (Bill) Zhu" class="img-fluid">
@@ -382,36 +387,13 @@
                   <p>Pokee AI</p>
               </div>
           </div>
-
-          <div class="col-md-3 col-sm-4 col-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
-                <img src="assets/img/speakers/jieyu_zhao.jpg" alt="Jieyu Zhao" class="img-fluid">
-                <br><a href="https://jyzhao.net/" style="font-size: 1.2em; color: #00356B;">Jieyu Zhao</a></br>
-                <p>University of Southern California</p>
-            </div>
-        </div>
-
         <div class="col-md-3 col-sm-4 col-6">
           <div class="speaker" data-aos="fade-up" data-aos-delay="300" style="text-align: center;">
               <img src="assets/img/speakers/siva_reddy.jpeg" alt="Siva Reddy" class="img-fluid">
               <br><a href="https://sivareddy.in/" style="font-size: 1.2em; color: #00356B;">Siva Reddy</a></br>
-              <p>Mila & McGill University</p>
+              <p>Mila &amp; McGill University</p>
           </div>
       </div>
-              <!-- <div class="col-md-3 col-sm-4 col-6">
-                  <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
-                      <img src="assets/img/speakers/jie_fu.jpg" alt="Jie Fu" class="img-fluid">
-                      <br><a href="https://bigaidream.github.io/" style="font-size: 1.2em; color: #00356B;">Jie Fu</a></br>
-                      <p>Ubiquant</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-4 col-6">
-                <div class="speaker" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
-                      <img src="assets/img/speakers/jieyu_zhao.jpg" alt="Jieyu Zhao" class="img-fluid">
-                      <br><a href="https://jyzhao.net/" style="font-size: 1.2em; color: #00356B;">Jieyu Zhao</a></br>
-                      <p>University of Southern California</p>
-                </div>
-            </div> -->
           </div>
       </div>
   </section>
@@ -437,7 +419,7 @@
                 <table class="schedule-table table align-middle">
                     <thead>
                         <tr>
-                            <th>Time&nbsp;(PDT)</th>
+                            <th>Time&nbsp;(EST)</th>
                             <th>Session</th>
                             <th>Speaker</th>
                             <th>Talk&nbsp;Title</th>
@@ -446,47 +428,47 @@
                     <tbody>
                         <tr>
                             <td class="time">08:00 – 08:15</td>
-                            <td>Opening Remarks: The Era of Self-Evolving Intelligence</td>
+                            <td>Opening remarks: Trustworthy Agent Evolution as a Systems Problem</td>
                             <td colspan="2">Organizers</td>
                         </tr>
                         <tr>
                             <td class="time">08:15 – 09:00</td>
                             <td>Keynote 1 (Foundations)</td>
-                            <td>Prof. Yoshua Bengio (Mila, Université de Montréal)</td>
-                            <td>TBD</td>
+                            <td>Prof. Yoshua Bengio (Mila, Université de Montréal, LawZero)</td>
+                            <td>Safeguarding Agent Evolution: The Scientist AI Approach to Catastrophic Risk</td>
                         </tr>
                         <tr>
                             <td class="time">09:00 – 09:45</td>
                             <td>Spotlight orals</td>
-                            <td colspan="2">3 Orals (prioritize junior and underrepresented researchers)</td>
+                            <td colspan="2">3 orals (prioritize junior and underrepresented researchers)</td>
                         </tr>
                         <tr>
                             <td class="time">09:45 – 10:30</td>
-                            <td>Keynote 2 (Safety)</td>
+                            <td>Keynote 2 (Capability &amp; Isolation)</td>
                             <td>Prof. Dawn Song (University of California, Berkeley)</td>
-                            <td>TBD</td>
+                            <td>Privilege, Isolation, and Verifiable Execution in Agent Runtimes</td>
                         </tr>
                         <tr class="poster-row">
                           <td class="time">10:30 – 12:00</td>
                           <td>Poster session 1</td>
-                          <td colspan="2">Poster session, lunch break, and Q&A round table for junior researchers</td>
+                          <td colspan="2">Poster session, lunch break, and Q&amp;A round table for junior researchers</td>
                       </tr>
                         <tr>
                             <td class="time">12:00 – 12:45</td>
-                            <td>Keynote 3 (Systems and Security)</td>
-                            <td>Prof. Sanmi Koyejo (Stanford University, Virture AI)</td>
-                            <td>TBD</td>
+                            <td>Keynote 3 (Runtime &amp; Infrastructure)</td>
+                            <td>Prof. Yongfeng Zhang (Rutgers University) (tentative)</td>
+                            <td>What an Operating System for Agents Should Actually Provide</td>
                         </tr>
                         <tr>
                             <td class="time">12:45 – 13:15</td>
                             <td>Spotlight orals</td>
-                            <td colspan="2">2 Orals (prioritize junior and underrepresented researchers)</td>
+                            <td colspan="2">2 orals (prioritize junior and underrepresented researchers)</td>
                         </tr>
                         <tr>
                           <td class="time">13:15 – 14:00</td>
-                          <td>Keynote 4 (Co-Evolution)</td>
-                          <td>Prof. Natasha Jaques (University of Washington)</td>
-                          <td>TBD</td>
+                          <td>Keynote 4 (Measurement)</td>
+                          <td>Prof. Sanmi Koyejo (Stanford University)</td>
+                          <td>From Benchmarks to Continuous System-Level AI Measurement</td>
                       </tr>
                         <tr class="poster-row">
                             <td class="time">14:00 – 15:30</td>
@@ -495,18 +477,28 @@
                             </tr>
                         <tr>
                           <td class="time">15:30 – 16:45</td>
-                          <td>Panel talks and discussion (Slido Q&A)</td>
-                          <td>Prof. Siva Reddy (Mila & McGill University), Prof. Jieyu Zhao (University of Southern California), Dr. Tao Zhang (Manus AI), Dr. Zheqing (Bill) Zhu (Pokee AI)</td>
-                          <td>TBD</td>
+                          <td>Panel discussion (Slido Q&amp;A)</td>
+                          <td>Prof. Siva Reddy (Mila, McGill); Prof. Natasha Jaques (UWashington, DeepMind) (tentative); Dr. Tao Zhang (Manus AI) (tentative); Dr. Bill Zhu (Pokee AI)</td>
+                          <td>See panel topics below</td>
                         </tr>
                         <tr>
                             <td class="time">16:45 – 17:00</td>
-                            <td>Closing remarks and Best Paper Awards</td>
+                            <td>Closing remarks and Outstanding Paper Awards</td>
                             <td colspan="2">Organizers</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <p style="margin-top: 20px; font-size: 16px;">
+              Talk titles are tentative and will be finalized with the speakers. Panel topics:
+            </p>
+            <ul>
+              <li>Which OS abstractions survive contact with stochastic agents?</li>
+              <li>Rollback and reversibility: can a self-improving agent be un-improved?</li>
+              <li>Where should trust be enforced: in the model, or in the substrate?</li>
+              <li>Human–agent co-evolution: oversight as a system interface.</li>
+              <li>Deployment reality: what infrastructure do production agents actually need?</li>
+            </ul>
         </div>
     </section>
 
@@ -583,57 +575,75 @@
             <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
               <img src="assets/img/organizers/haolun_wu.jpg" alt="Haolun Wu" class="img-fluid">
               <br><a href="https://haolun-wu.github.io/" style="font-size: 1.2em; color: #00356B;">Haolun Wu</a></br>
-              <p>Mila & McGill University</p>
-            </div>
-          </div>
-
-          <div class="col-lg col-md-4 col-sm-6 col-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-            <img src="assets/img/organizers/yankai_chen.jpg" alt="Yankai Chen" class="img-fluid">
-            <br><a href="https://yankai-chen.github.io/" style="font-size: 1.2em; color: #00356B;">Yankai Chen</a></br>
-            <p>MBZUAI</p>
-            </div>
-          </div>
-
-          <div class="col-lg col-md-4 col-sm-6 col-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-              <img src="assets/img/organizers/ye_yuan.jpg" alt="Ye Yuan" class="img-fluid">
-              <br><a href="https://stevenyuan666.github.io/" style="font-size: 1.2em; color: #00356B;">Ye Yuan</a></br>
-              <p>Mila & McGill University</p>
+              <p>Mila &amp; McGill University<br><span style="font-size: 0.9em; color: #6c757d;">Primary Contact</span></p>
             </div>
           </div>
 
           <div class="col-lg col-md-4 col-sm-6 col-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
               <img src="assets/img/organizers/negar_arabzadeh.jpg" alt="Negar Arabzadeh" class="img-fluid">
-              <br><a href="https://www.negara.me/" style="font-size: 1.2em; color: #00356B;">Negar Arabzadeh</a></br>
+              <br><a href="https://negararabzadeh.github.io/" style="font-size: 1.2em; color: #00356B;">Negar Arabzadeh</a></br>
               <p>University of California, Berkeley</p>
             </div>
           </div>
 
-        <div class="row">
-            <div class="col-lg col-md-4 col-sm-6 col-6">
-                <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-                <img src="assets/img/organizers/wenyue_hua.jpg" alt="Wenyue Hua" class="img-fluid">
-                <br><a href="https://wenyueh.github.io/en/" style="font-size: 1.2em; color: #00356B;">Wenyue Hua</a></br>
-                <p>Microsoft Research</p>
-                </div>
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/organizers/wenyue_hua.jpg" alt="Wenyue Hua" class="img-fluid">
+              <br><a href="https://wenyueh.github.io/en/" style="font-size: 1.2em; color: #00356B;">Wenyue Hua</a></br>
+              <p>Microsoft Research</p>
             </div>
-            
-            <div class="col-lg col-md-4 col-sm-6 col-6">
-                <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-                <img src="assets/img/organizers/bang_liu.jpg" alt="Bang Liu" class="img-fluid">
-                <br><a href="https://www-labs.iro.umontreal.ca/~liubang/" style="font-size: 1.2em; color: #00356B;">Bang Liu</a></br>
-                <p>Mila & Université de Montréal</p>
-                </div>
-            </div>
+          </div>
 
-            <div class="col-lg col-md-4 col-sm-6 col-6">
-              <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/organizers/bang_liu.jpg" alt="Bang Liu" class="img-fluid">
+              <br><a href="https://www-labs.iro.umontreal.ca/~liubang/" style="font-size: 1.2em; color: #00356B;">Bang Liu</a></br>
+              <p>Mila &amp; Université de Montréal</p>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
               <img src="assets/img/organizers/laurent_charlin.jpg" alt="Laurent Charlin" class="img-fluid">
-              <br><a href="https://www.hec.ca/en/profs/laurent.charlin.html" style="font-size: 1.2em; color: #00356B;">Laurent Charlin</a></br>
-              <p>Mila & HEC Montréal</p>
-              </div>
+              <br><a href="https://www.cs.toronto.edu/~lcharlin/" style="font-size: 1.2em; color: #00356B;">Laurent Charlin</a></br>
+              <p>Mila &amp; HEC Montréal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="supporting-team" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Supporting Team</h2>
+          <p>Beyond the organizers, the following members support workshop delivery.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/organizers/ye_yuan.jpg" alt="Ye Yuan" class="img-fluid">
+              <br><a href="https://stevenyuan666.github.io/" style="font-size: 1.2em; color: #00356B;">Ye Yuan</a></br>
+              <p>Mila &amp; McGill University<br><span style="font-size: 0.9em; color: #6c757d;">Web and Technical Chair</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/organizers/yankai_chen.jpg" alt="Yankai Chen" class="img-fluid">
+              <br><a href="https://yankai-chen.github.io/" style="font-size: 1.2em; color: #00356B;">Yankai Chen</a></br>
+              <p>MBZUAI<br><span style="font-size: 0.9em; color: #6c757d;">Review and Program Coordinator</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-4 col-sm-6 col-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+              <img src="assets/img/organizers/tianyu_shi.jpg" alt="Tianyu Shi" class="img-fluid">
+              <br><a href="https://tianyushi.org/" style="font-size: 1.2em; color: #00356B;">Tianyu Shi</a></br>
+              <p>McGill University<br><span style="font-size: 0.9em; color: #6c757d;">Publicity and Sponsorship Chair</span></p>
+            </div>
           </div>
         </div>
       </div>
@@ -646,15 +656,7 @@
             <p>This workshop is advised by</p>
           </div>
   
-          <div class="row">
-            <div class="col-lg col-md-4 col-sm-6 col-6">
-              <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-              <img src="assets/img/advisors/yoshua_bengio.jpg" alt="Yoshua Bengio" class="img-fluid">
-              <br><a href="https://yoshuabengio.org/profile/" style="font-size: 1.2em; color: #00356B;">Yoshua Bengio</a></br>
-              <p>Mila & Université de Montréal</p>
-              </div>
-          </div>
-
+          <div class="row justify-content-center">
           <div class="col-lg col-md-4 col-sm-6 col-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
             <img src="assets/img/advisors/preslav_nakov.jpg" alt="Preslav Nakov" class="img-fluid">
@@ -665,15 +667,11 @@
 
           <div class="col-lg col-md-4 col-sm-6 col-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-              <img src="assets/img/advisors/xue_liu.jpg" alt="Xue Liu" class="img-fluid">
-              <br><a href="https://cs.mcgill.ca/~xueliu/site/intro.html" style="font-size: 1.2em; color: #00356B;">Xue Liu</a></br>
-              <p>MBZUAI & McGill University</p>
+              <img src="assets/img/advisors/xue_liu.jpg" alt="Xue (Steve) Liu" class="img-fluid">
+              <br><a href="https://cs.mcgill.ca/~xueliu/site/intro.html" style="font-size: 1.2em; color: #00356B;">Xue (Steve) Liu</a></br>
+              <p>MBZUAI &amp; McGill University</p>
             </div>
           </div>
-  
-            
-
-            
           </div>
         </div>
       </section>
